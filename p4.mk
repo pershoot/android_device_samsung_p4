@@ -33,6 +33,12 @@ $(call inherit-product, device/samsung/p4-common/p4-common.mk)
 
 $(call inherit-product-if-exists, vendor/samsung/p4/p4-vendor.mk)
 
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+
+PRODUCT_PACKAGES += \
+  Mms
+
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := p4
 PRODUCT_DEVICE := p4

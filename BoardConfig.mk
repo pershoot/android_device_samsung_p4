@@ -22,6 +22,8 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/p4/BoardConfigVendor.mk
 
+BOARD_USES_HC_RADIO := true
+
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 710934528
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 14200340480
 
