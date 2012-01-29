@@ -1,10 +1,10 @@
-# Inherit device configuration for p3.
-$(call inherit-product, device/samsung/p3/p3.mk)
+# Inherit device configuration for p4.
+$(call inherit-product, device/samsung/p4/p4.mk)
 
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
 
-# Inhert GSM common stuff
+# Inherit GSM common stuff
 $(call inherit-product, vendor/cm/config/gsm.mk)
 
 #
