@@ -35,7 +35,6 @@ etc/firmware/nvmm_wavdec.axf
 etc/firmware/nvmm_wmadec.axf
 etc/firmware/nvmm_wmaprodec.axf
 etc/firmware/nvrm_avp.bin
-etc/wifi/bcm4330_aps.bin
 etc/wifi/bcm4330_mfg.bin
 etc/wifi/bcm4330_sta.bin
 etc/wifi/bcm4330_sta.bin_b0
