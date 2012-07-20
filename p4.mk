@@ -38,8 +38,7 @@ $(call inherit-product-if-exists, vendor/samsung/p4/p4-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
-PRODUCT_PACKAGES += \
-  Mms
+$(call inherit-product, build/target/product/telephony.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := p4
