@@ -24,6 +24,19 @@
     <!-- This device allows sms service. -->
     <bool name="config_sms_capable">true</bool>
 
+    <!-- Flag indicating whether the current device is "voice capable".
+         If true, this means that the device supports circuit-switched
+         (i.e. voice) phone calls over the telephony network, and is
+         allowed to display the in-call UI while a cellular voice call is
+         active.  This can be overridden to false for "data only" devices
+         which can't make voice calls and don't support any in-call UI.
+
+         Note: this flag is subtly different from the
+         PackageManager.FEATURE_TELEPHONY system feature, which is
+         available on *any* device with a telephony radio, even if the
+         device is data-only. -->
+    <bool name="config_voice_capable">true</bool>
+
     <string name="config_datause_iface">rmnet0</string>
 
     <!-- XXXXX NOTE THE FOLLOWING RESOURCES USE THE WRONG NAMING CONVENTION.
@@ -61,7 +74,7 @@
     </string-array>
 
     <string-array translatable="false" name="config_tether_wifi_regexs">
-        <item>"eth0"</item>
+        <item>"wlan0"</item>
     </string-array>
 
     <integer-array translatable="false" name="config_tether_upstream_types">
