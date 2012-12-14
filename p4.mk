@@ -61,7 +61,7 @@ $(call inherit-product, build/target/product/telephony.mk)
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.telephony.ril_class=Smdk4210RIL
+  ro.telephony.ril_class=SamsungExynos4RIL
 
 # GPS config
 PRODUCT_PROPERTY_OVERRIDES += \
